@@ -165,30 +165,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>1.0.2</version>
-                <executions>
-                    <execution>
-                        <id>execution1</id>
-                        <configuration>
-                            <sourceDirectory>${basedir}/src/main/resources/yaml/connection</sourceDirectory>
-                            <outputDirectory>${basedir}/src/main/gen</outputDirectory>
-                            <includeConstructors>true</includeConstructors>
-                            <includeAdditionalProperties>false</includeAdditionalProperties>
-                            <sourceType>yaml</sourceType>
-                            <usePrimitives>true</usePrimitives>
-                            <useLongIntegers>true</useLongIntegers>
-                            <generateBuilders>true</generateBuilders>
-                        </configuration>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.openapitools</groupId>
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <version>5.4.0</version>
