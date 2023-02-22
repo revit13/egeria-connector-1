@@ -4,8 +4,6 @@ import java.net.URI;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import java.util.HashMap;
-import java.util.Map;
 import org.fybrik.datacatalog.model.Db2;
 import org.fybrik.datacatalog.model.FybrikArrowFlight;
 import org.fybrik.datacatalog.model.GoogleSheets;
@@ -31,7 +29,7 @@ import javax.annotation.Generated;
 
 @Schema(name = "Connection", description = "Details of connection types supported for accessing data stores. Not all are necessarily supported by fybrik storage allocation mechanism used to store temporary/persistent datasets.")
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
-public class Connection implements Serializable {
+public class Connection  implements Serializable {
 
   private static final long serialVersionUID = 1L;
 
@@ -250,20 +248,18 @@ public class Connection implements Serializable {
         Objects.equals(this.mysql, connection.mysql) &&
         Objects.equals(this.name, connection.name) &&
         Objects.equals(this.postgres, connection.postgres) &&
-        Objects.equals(this.s3, connection.s3) &&
-        super.equals(o);
+        Objects.equals(this.s3, connection.s3);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(db2, fybrikArrowFlight, googleSheets, https, kafka, mysql, name, postgres, s3, super.hashCode());
+    return Objects.hash(db2, fybrikArrowFlight, googleSheets, https, kafka, mysql, name, postgres, s3);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Connection {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    db2: ").append(toIndentedString(db2)).append("\n");
     sb.append("    fybrikArrowFlight: ").append(toIndentedString(fybrikArrowFlight)).append("\n");
     sb.append("    googleSheets: ").append(toIndentedString(googleSheets)).append("\n");
