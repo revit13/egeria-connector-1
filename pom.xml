@@ -23,11 +23,11 @@
         <!-- spring dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- remove this dependency when spring update to use a new version of snake YAML -->
         <dependency>
@@ -184,7 +184,6 @@
                             <basePackage>org.fybrik.datacatalog</basePackage>
                             <apiPackage>org.fybrik.datacatalog.api</apiPackage>
                             <modelPackage>org.fybrik.datacatalog.model</modelPackage>
-                            <!-- <invokerPackage>org.fybrik.datacatalog.handler</invokerPackage> -->
                             <configOptions>
                                 <!-- <delegatePattern>true</delegatePattern> -->
                                 <sourceFolder>src/main/gen</sourceFolder>
@@ -195,9 +194,6 @@
                                 <dateLibrary>java8-localdatetime</dateLibrary>
                                 <serializableModel>true</serializableModel>
                                 <dateLibrary>java8</dateLibrary>
-                                <!-- <configPackage>org.fybrik.datacatalog.config</configPackage> -->
-                                <!-- <generateSupportingFiles>true</generateSupportingFiles> -->
-                                <!-- <supportingFilesToGenerate> ApiUtil.java, GetPoliciesDecisionsApiController.java </supportingFilesToGenerate> -->
                                 <disallowAdditionalPropertiesIfNotPresent>true</disallowAdditionalPropertiesIfNotPresent>
                                 <generateModels>true</generateModels>
                                 <generateModelDocumentation>true</generateModelDocumentation>
