@@ -29,10 +29,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
         <!-- remove this dependency when spring update to use a new version of snake YAML -->
         <dependency>
             <groupId>org.yaml</groupId>
