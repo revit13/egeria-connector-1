@@ -11,7 +11,7 @@ clean:
 
 .PHONY: run
 run:
-	nohup java -cp target/fybrik-openapi-spring-1.0.0.jar org.openapitools.OpenAPI2SpringBoot  > output-egeriaconnector.log &  2>&1 ; echo "$$!" >> pids.txt; sleep 5
+	nohup java -cp target/fybrik-openapi-spring-1.0.0.jar org.fybrik.handler.OpenAPI2SpringBoot > output-egeriaconnector.log &  2>&1 ; echo "$$!" >> pids.txt; sleep 5
 
 .PHONY: terminate
 terminate:
